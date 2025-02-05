@@ -1,24 +1,41 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
-import Home from "./Components/Home";
+import "./styles/App.css";
 
-
-
-
-
-function App() {
+const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
+    <div className="app">
+      {/* Navbar */}
+      <nav className="navbar">
+        <button className="menu-btn">☰</button>
+        <h1>Prize Scout</h1>
+        <input type="text" placeholder="E.g. Laptops, mobiles" />
+        <button className="login-btn">Login/Signup</button>
+      </nav>
+
+      {/* Main Content */}
+      <div className="container">
+        <section className="section">
+          <h2>Trending</h2>
+          <div className="grid">
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            
+          </div>
+          
+        </section>
+
+        <section className="section">
+          <h2>Smartphones</h2>
+          <div className="grid">
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+          </div>
+        </section>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
