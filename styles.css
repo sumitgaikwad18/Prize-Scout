@@ -1,0 +1,104 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  background: linear-gradient(to right, #a445b2, #fa4299);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 550px;
+  
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  max-width: 400px;
+  
+}
+
+
+.title {
+  padding:10px;
+  text-align: center;
+  padding-left: 10px;
+  color: #333;
+  font-size: 27px;
+  
+  margin-bottom: 20px;
+  
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #fa4299;
+  box-shadow: 0 0 5px rgba(250, 66, 153, 0.5);
+}
+
+.btn {
+  text-align: center;
+  
+}
+
+.btn button {
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(to right, #a445b2, #fa4299);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  opacity: 0.9;
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link-text a {
+  color: #fa4299;
+  text-decoration: none;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+/* Add this CSS to style the success message */
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
